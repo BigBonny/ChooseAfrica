@@ -88,7 +88,7 @@ export default function Header() {
                 alt={site.name}
                 width={44}
                 height={44}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain p-0.5"
               />
             </span>
             <span className="flex flex-col leading-tight">

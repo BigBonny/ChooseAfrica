@@ -186,7 +186,7 @@ export default function Home() {
 
       {/* Countries preview */}
       <section className="bg-sand/50">
-        <Section eyebrow="Dossiers-Pays" title="54 économies, 54 opportunités !">
+        <Section eyebrow="Dossiers-Pays" title="55 économies, 55 opportunités !">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {countries.map((c) => (
               <Link

@@ -31,7 +31,7 @@ export default function Footer() {
                 alt={site.name}
                 width={48}
                 height={48}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain p-0.5"
               />
             </span>
             <span className="flex flex-col leading-tight">
