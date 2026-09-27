@@ -13,10 +13,10 @@ export default function DossiersPaysPage() {
         image="/images/savanna.jpg"
         eyebrow="Rubrique 4 — Dossiers-Pays"
         title="Dossiers-Pays"
-        description="Des analyses approfondies du climat des affaires, des secteurs porteurs et des opportunités d'investissement dans chaque pays cible."
+        description="54 économies, 54 opportunités ! Des analyses approfondies du climat des affaires, des secteurs porteurs et des opportunités d'investissement dans chaque pays cible."
       />
 
-      <Section eyebrow="Les pays" title="Cinq économies à découvrir">
+      <Section eyebrow="Les pays" title="54 économies, 54 opportunités !">
         <div className="grid gap-7 md:grid-cols-2">
           {countries.map((c) => (
             <Link

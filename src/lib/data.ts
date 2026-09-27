@@ -217,13 +217,36 @@ export const programme = [
   },
 ];
 
+export const magazineRubrics = [
+  {
+    name: "Leaders",
+    desc: "Points de vue, analyses, portraits, entreprise du mois et personnalité marquante.",
+    sub: ["Points de vue", "Analyses", "Portraits", "Entreprise du mois", "Personnalité marquante"],
+  },
+  {
+    name: "Ressources",
+    desc: "Matières premières, capitaux et finances.",
+    sub: ["Matières premières", "Capitaux & finances"],
+  },
+  {
+    name: "Exploits",
+    desc: "De femmes et d'hommes, initiatives et entreprises.",
+    sub: ["De femmes & d'hommes", "Initiatives & entreprises"],
+  },
+  {
+    name: "Business",
+    desc: "Appels d'offres, opportunités et projets.",
+    sub: ["Appels d'offres", "Opportunités & projets"],
+  },
+];
+
 export const articles = [
   {
     title: "Afrique centrale : la CEMAC accélère sur l'intégration économique",
     image: "/images/meeting.jpg",
     excerpt:
       "Les États membres harmonisent leurs réglementations pour faciliter la circulation des capitaux et des biens dans la sous-région.",
-    category: "Économie",
+    category: "Analyses",
     date: "12 sept. 2026",
     readTime: "6 min",
   },
@@ -232,7 +255,7 @@ export const articles = [
     image: "/images/savanna.jpg",
     excerpt:
       "Une nouvelle politique de transformation locale redessine la chaîne de valeur du coton et crée des milliers d'emplois.",
-    category: "Dossiers-Pays",
+    category: "Initiatives & entreprises",
     date: "08 sept. 2026",
     readTime: "5 min",
   },
@@ -241,7 +264,7 @@ export const articles = [
     image: "/images/port.jpg",
     excerpt:
       "Capacité, connexions ferroviaires et zones franches : le port camerounais s'impose comme une porte d'entrée régionale.",
-    category: "Infrastructures",
+    category: "Opportunités & projets",
     date: "01 sept. 2026",
     readTime: "7 min",
   },
@@ -250,7 +273,7 @@ export const articles = [
     image: "/images/forest.jpg",
     excerpt:
       "Plusieurs projets d'envergure visent à électrifier les territoires tout en réduisant la dépendance aux énergies fossiles.",
-    category: "Énergie",
+    category: "Matières premières",
     date: "26 août 2026",
     readTime: "4 min",
   },
@@ -259,7 +282,7 @@ export const articles = [
     image: "/images/office.jpg",
     excerpt:
       "Paiements mobiles, crédit aux PME, assurance : le secteur fintech attire un volume record d'investissements.",
-    category: "Numérique",
+    category: "Capitaux & finances",
     date: "20 août 2026",
     readTime: "8 min",
   },
@@ -268,7 +291,7 @@ export const articles = [
     image: "/images/handshake.jpg",
     excerpt:
       "Panorama des outils de garanties et d'assurances proposés aux investisseurs par les institutions financières.",
-    category: "Finance",
+    category: "Points de vue",
     date: "15 août 2026",
     readTime: "6 min",
   },

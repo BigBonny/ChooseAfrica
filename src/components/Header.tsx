@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -81,11 +82,14 @@ export default function Header() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
           <Link href="/" className="group flex items-center gap-3">
-            <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-emerald shadow-md ring-1 ring-gold/40 transition group-hover:ring-gold">
-              <span className="font-display text-base font-bold text-gold">
-                CA
-              </span>
-              <span className="absolute -bottom-1 left-0 right-0 h-1 bg-gradient-to-r from-gold to-gold-light" />
+            <span className="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-white shadow-md ring-1 ring-gold/40 transition group-hover:ring-gold">
+              <Image
+                src="/images/logo-cae.jpg"
+                alt={site.name}
+                width={44}
+                height={44}
+                className="h-full w-full object-cover"
+              />
             </span>
             <span className="flex flex-col leading-tight">
               <span

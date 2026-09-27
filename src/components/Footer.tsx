@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { nav, site } from "@/lib/data";
 
@@ -24,9 +25,14 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
-            <span className="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-emerald ring-1 ring-gold/40">
-              <span className="font-display text-base font-bold text-gold">CA</span>
-              <span className="absolute -bottom-1 left-0 right-0 h-1 bg-gradient-to-r from-gold to-gold-light" />
+            <span className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-white shadow-md ring-1 ring-gold/40">
+              <Image
+                src="/images/logo-cae.jpg"
+                alt={site.name}
+                width={48}
+                height={48}
+                className="h-full w-full object-cover"
+              />
             </span>
             <span className="flex flex-col leading-tight">
               <span className="font-display text-lg font-bold text-background">

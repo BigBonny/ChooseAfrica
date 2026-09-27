@@ -4,6 +4,30 @@ import Countdown from "@/components/Countdown";
 import Section from "@/components/Section";
 import { countries, articles, partners, site } from "@/lib/data";
 
+const eclairent = [
+  {
+    name: "M. Jean-Pierre Mbemba",
+    role: "Président, Chambre de Commerce Afrique-Europe",
+    quote:
+      "L'Afrique n'est pas un marché à risque, c'est un marché à comprendre.",
+    topic: "Points de vue — L'intégration régionale, levier de croissance",
+  },
+  {
+    name: "Mme Aïssatou Diallo",
+    role: "Directrice, Banque Africaine de Développement",
+    quote:
+      "Financer la transition, c'est investir dans la résilience de tout un continent.",
+    topic: "Analyse — Les nouveaux chemins du financement en Afrique",
+  },
+  {
+    name: "Mme Fatou Ndiaye",
+    role: "Fondatrice, Africa Tech Ventures",
+    quote:
+      "Le numérique permet de sauter des étapes et d'inclure des millions d'usagers.",
+    topic: "Portrait — Une entrepreneure au cœur de la fintech africaine",
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -23,40 +47,64 @@ export default function Home() {
         <div className="deco-ring -right-12 -top-28 h-80 w-80" />
         <div className="deco-ring -bottom-40 -left-24 h-96 w-96" />
 
-        <div className="relative mx-auto max-w-7xl px-4 py-28 sm:px-6 sm:py-36">
-          <p className="animate-fade-up inline-flex items-center gap-2.5 rounded-full border border-gold/40 bg-gold/10 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.25em] text-gold-light backdrop-blur-sm">
-            <span className="h-1.5 w-1.5 rounded-full bg-gold" />
-            {site.sommetLabel}
-          </p>
+        <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32">
+          <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+            {/* Left: text */}
+            <div>
+              <p className="animate-fade-up inline-flex items-center gap-2.5 rounded-full border border-gold/40 bg-gold/10 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.25em] text-gold-light backdrop-blur-sm">
+                <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                {site.sommetLabel}
+              </p>
 
-          <h1 className="font-display animate-fade-up delay-100 mt-7 max-w-4xl text-5xl font-bold leading-[1.05] text-balance sm:text-7xl">
-            Choose <span className="text-gold">Africa</span>
-          </h1>
-          <p className="font-display animate-fade-up delay-200 mt-5 text-xl italic text-sand/85 sm:text-2xl">
-            Investir en Afrique, comprendre pour agir.
-          </p>
-          <p className="animate-fade-up delay-300 mt-6 max-w-2xl text-lg font-light leading-relaxed text-sand/80">
-            {site.description}
-          </p>
+              <h1 className="font-display animate-fade-up delay-100 mt-7 text-5xl font-bold leading-[1.05] text-balance sm:text-6xl lg:text-7xl">
+                Choose <span className="text-gold">Africa</span>
+              </h1>
+              <p className="font-display animate-fade-up delay-200 mt-5 text-xl italic text-sand/85 sm:text-2xl">
+                Investir en Afrique, comprendre pour agir.
+              </p>
+              <p className="animate-fade-up delay-300 mt-6 max-w-xl text-lg font-light leading-relaxed text-sand/80">
+                Des outils efficients au service de la promotion des
+                investissements et de l'attractivité des économies
+                africaines.
+              </p>
 
-          <div className="animate-fade-up delay-400 mt-10 flex flex-wrap gap-4">
-            <Link href="/inscription" className="btn-gold px-8 py-3.5 text-sm">
-              S&apos;inscrire au Sommet
-              <span aria-hidden>→</span>
-            </Link>
-            <Link
-              href="/dossiers-pays"
-              className="btn-outline-light px-8 py-3.5 text-sm"
-            >
-              Découvrir les Dossiers-Pays
-            </Link>
-          </div>
+              <div className="animate-fade-up delay-400 mt-10 flex flex-wrap gap-4">
+                <Link href="/inscription" className="btn-gold px-8 py-3.5 text-sm">
+                  S'inscrire au Sommet
+                  <span aria-hidden>→</span>
+                </Link>
+                <Link
+                  href="/dossiers-pays"
+                  className="btn-outline-light px-8 py-3.5 text-sm"
+                >
+                  Découvrir les Dossiers-Pays
+                </Link>
+              </div>
 
-          <div className="animate-fade-up delay-400 mt-14">
-            <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.25em] text-sand/60">
-              Le Sommet débute dans
-            </p>
-            <Countdown />
+              <div className="animate-fade-up delay-400 mt-12">
+                <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.25em] text-sand/60">
+                  Le Sommet débute dans
+                </p>
+                <Countdown />
+              </div>
+            </div>
+
+            {/* Right: Africa map */}
+            <div className="animate-fade-in delay-300 relative hidden lg:block">
+              <div className="relative mx-auto aspect-square max-w-md">
+                <div className="absolute inset-0 rounded-full bg-gold/10 blur-3xl" />
+                <div className="deco-ring absolute inset-0" />
+                <div className="deco-ring absolute inset-4" />
+                <Image
+                  src="/images/carte-afrique.jpg"
+                  alt="Carte des pays d'Afrique"
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 0vw, 40vw"
+                  className="rounded-full object-cover shadow-2xl ring-2 ring-gold/30"
+                />
+              </div>
+            </div>
           </div>
 
           <dl className="animate-fade-up delay-400 mt-16 grid max-w-3xl grid-cols-2 gap-x-6 gap-y-10 border-t border-sand/15 pt-10 sm:grid-cols-4">
@@ -138,7 +186,7 @@ export default function Home() {
 
       {/* Countries preview */}
       <section className="bg-sand/50">
-        <Section eyebrow="Dossiers-Pays" title="Cinq économies, cinq opportunités">
+        <Section eyebrow="Dossiers-Pays" title="54 économies, 54 opportunités !">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {countries.map((c) => (
               <Link
@@ -235,7 +283,7 @@ export default function Home() {
                   {a.excerpt}
                 </p>
                 <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-emerald transition group-hover:gap-3 group-hover:text-gold-dark">
-                  Lire l&apos;article <span aria-hidden>→</span>
+                  Lire l'article <span aria-hidden>→</span>
                 </span>
               </div>
             </article>
@@ -247,6 +295,48 @@ export default function Home() {
           </Link>
         </div>
       </Section>
+
+      {/* Elles & ils éclairent */}
+      <section className="bg-sand/50">
+        <Section eyebrow="Elles & ils éclairent" title="Points de vue, analyses et portraits">
+          <div className="grid gap-7 md:grid-cols-3">
+            {eclairent.map((p) => (
+              <div key={p.name} className="card card-hover flex flex-col p-8">
+                <span
+                  aria-hidden
+                  className="font-display text-6xl leading-none text-gold/40"
+                >
+                  &ldquo;
+                </span>
+                <blockquote className="font-display mt-2 flex-1 text-lg italic leading-relaxed text-ink/85">
+                  {p.quote}
+                </blockquote>
+                <p className="mt-5 border-l-2 border-gold pl-4 text-xs font-semibold uppercase tracking-[0.15em] text-gold-dark">
+                  {p.topic}
+                </p>
+                <div className="mt-6 flex items-center gap-4 border-t border-sand pt-6">
+                  <div className="font-display flex h-14 w-14 items-center justify-center rounded-full bg-emerald text-lg font-bold text-gold ring-1 ring-gold/40">
+                    {p.name
+                      .replace(/^(M\.|Mme)\s+/, "")
+                      .split(" ")
+                      .map((n) => n[0])
+                      .slice(0, 2)
+                      .join("")}
+                  </div>
+                  <div>
+                    <p className="font-display text-base font-bold text-ink">
+                      {p.name}
+                    </p>
+                    <p className="mt-0.5 text-[11px] font-semibold uppercase tracking-[0.15em] text-muted">
+                      {p.role}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Section>
+      </section>
 
       {/* Partners strip */}
       <section className="bg-emerald-deep pattern-kente text-background">
@@ -300,17 +390,17 @@ export default function Home() {
             </h2>
             <p className="mx-auto mt-5 max-w-2xl font-light leading-relaxed text-sand/85">
               Participants, exposants, partenaires : réservez votre place et
-              prenez part au rendez-vous de l&apos;investissement en Afrique.
+              prenez part au rendez-vous de l'investissement en Afrique.
             </p>
             <div className="mt-9 flex flex-wrap justify-center gap-4">
               <Link href="/inscription" className="btn-gold px-8 py-3.5 text-sm">
-                S&apos;inscrire
+                S'inscrire
               </Link>
               <Link
                 href="/abonnements"
                 className="btn-outline-light px-8 py-3.5 text-sm"
               >
-                S&apos;abonner à la newsletter
+                S'abonner à la newsletter
               </Link>
             </div>
           </div>

@@ -4,6 +4,29 @@ import Section from "@/components/Section";
 
 export const metadata = { title: "Choose Africa" };
 
+const supports = [
+  {
+    num: "01",
+    title: "Le Dossier-Pays",
+    text: "La réalisation d'un dossier-pays, destiné à présenter les atouts, les ressources économiques et humaines, l'attractivité, les opportunités en matières d'investissements et du business, ainsi que les facilités qu'offre le pays en matière d'investissement, de création d'entreprises et de résidence.",
+  },
+  {
+    num: "02",
+    title: "Le Sommet annuel",
+    text: "L'organisation chaque année, dans un pays hôte, d'un Sommet international rassemblant les investisseurs intéressés par l'Afrique et les autorités des pays du continent en charge des secteurs économiques, de la facilitation et de la promotion des investissements.",
+  },
+  {
+    num: "03",
+    title: "Le Magazine",
+    text: "La publication d'un magazine sur les problématiques économiques et du business en Afrique.",
+  },
+  {
+    num: "04",
+    title: "La Newsletter",
+    text: "La publication d'une « newsletter » sur les opportunités d'affaires en Afrique.",
+  },
+];
+
 const objectifs = [
   {
     title: "Promouvoir l'attractivité",
@@ -38,12 +61,12 @@ export default function ChooseAfricaPage() {
       <PageHero
         image="/images/skyline.jpg"
         eyebrow="Rubrique 1 — Choose Africa"
-        title="Choose Africa"
-        description="Une initiative dédiée à la promotion de l'investissement et au rayonnement économique de l'Afrique, portée par un réseau d'acteurs publics et privés."
+        title="Choose Africa Events"
+        description="Dossiers-Pays & Sommets Annuels — un outil de promotion des investissements étrangers en Afrique."
       />
 
-      {/* Promoteur */}
-      <Section eyebrow="Promoteur" title="À l'initiative du projet">
+      {/* Présentation */}
+      <Section eyebrow="Présentation" title="Choose Africa Events">
         <div className="grid gap-8 md:grid-cols-3">
           <div className="md:col-span-1">
             <div className="relative aspect-square overflow-hidden rounded-2xl shadow-lg">
@@ -62,20 +85,31 @@ export default function ChooseAfricaPage() {
           </div>
           <div className="md:col-span-2">
             <p className="text-lg leading-relaxed text-ink/80">
-              Choose Africa est porté par un collectif d'entrepreneurs,
-              d'institutions financières et de personnalités engagées dans le
-              développement économique du continent. Le projet s'inspire des
-              modèles <em>Forum Investir en Afrique</em>, <em>L'Opinion</em> et{" "}
-              <em>Choose France</em>, en adaptant leur format aux réalités et
-              opportunités africaines.
-            </p>
-            <p className="mt-4 leading-relaxed text-muted">
-              Le promoteur réunit une équipe pluridisciplinaire — économistes,
-              juristes, communicants et chefs d'entreprise — qui conçoit le
-              Sommet, les Dossiers-Pays et le Magazine dans une logique de
-              service aux investisseurs et aux territoires.
+              <strong>Choose Africa Events – Dossiers-Pays & Sommets Annuels</strong>,
+              est un outil de promotion des investissements étrangers en Afrique.
+              Composé d'une plateforme promotionnelle et informationnelle,
+              Choose Africa Events se décline en 4 supports :
             </p>
           </div>
+        </div>
+
+        {/* Les 4 supports */}
+        <div className="mt-10 grid gap-5 sm:grid-cols-2">
+          {supports.map((s) => (
+            <div key={s.num} className="card card-hover p-8">
+              <div className="flex items-center gap-4">
+                <span className="font-display flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-emerald text-base font-bold text-gold ring-1 ring-gold/40">
+                  {s.num}
+                </span>
+                <h3 className="font-display text-xl font-bold text-ink">
+                  {s.title}
+                </h3>
+              </div>
+              <p className="mt-4 text-sm leading-relaxed text-muted">
+                {s.text}
+              </p>
+            </div>
+          ))}
         </div>
       </Section>
 
