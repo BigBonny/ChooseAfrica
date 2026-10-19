@@ -29,7 +29,7 @@ const categories: Category[] = [
   {
     id: "exposants",
     label: "Exposants",
-    price: "4 500 € - 5 040 €",
+    price: "4 500 € - 5 040 $",
     includes: [
       "Stand de 10 m²",
       "Accès aux cocktails",

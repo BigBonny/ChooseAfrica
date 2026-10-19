@@ -17,7 +17,7 @@ export default function Footer() {
             </h3>
           </div>
           <Link href="/abonnements" className="btn-gold px-7 py-3 text-sm">
-            S&apos;abonner gratuitement
+            S&apos;abonner
           </Link>
         </div>
       </div>

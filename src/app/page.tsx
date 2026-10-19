@@ -58,6 +58,9 @@ export default function Home() {
 
               <h1 className="font-display animate-fade-up delay-100 mt-7 text-5xl font-bold leading-[1.05] text-balance sm:text-6xl lg:text-7xl">
                 Choose <span className="text-gold">Africa</span>
+                <span className="mt-2 block text-2xl font-medium tracking-[0.15em] text-sand/80 sm:text-3xl">
+                  EVENTS
+                </span>
               </h1>
               <p className="font-display animate-fade-up delay-200 mt-5 text-xl italic text-sand/85 sm:text-2xl">
                 Investir en Afrique, comprendre pour agir.
@@ -96,8 +99,8 @@ export default function Home() {
                 <div className="deco-ring absolute inset-0" />
                 <div className="deco-ring absolute inset-4" />
                 <Image
-                  src="/images/carte-afrique.jpg"
-                  alt="Carte des pays d'Afrique"
+                  src="/images/africa-globe.jpg"
+                  alt="Le continent africain vu depuis l'espace"
                   fill
                   priority
                   sizes="(max-width: 1024px) 0vw, 40vw"
@@ -383,7 +386,7 @@ export default function Home() {
           <div className="deco-ring -bottom-28 -right-16 h-80 w-80" />
           <div className="relative">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
-              Édition {new Date().getFullYear()}
+              Édition {new Date(site.sommetDate).getFullYear()}
             </p>
             <h2 className="font-display mt-4 text-3xl font-bold text-balance sm:text-5xl">
               Rejoignez le Sommet Choose Africa

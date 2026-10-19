@@ -1,6 +1,6 @@
 export const site = {
-  name: "Choose Africa",
-  tagline: "Sommet & Dossiers-Pays",
+  name: "Choose Africa Events",
+  tagline: "Dossiers-Pays & Sommets Annuels",
   url: "www.choose-africa.com",
   description:
     "Le rendez-vous international des décideurs, investisseurs et entrepreneurs engagés dans le développement économique de l'Afrique.",

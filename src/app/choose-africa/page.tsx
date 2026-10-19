@@ -113,24 +113,43 @@ export default function ChooseAfricaPage() {
         </div>
       </Section>
 
-      {/* But & objectifs */}
+      {/* Promoteur */}
       <section className="bg-sand/40">
-        <Section eyebrow="But & objectifs" title="Comprendre pour investir, agir pour transformer">
-          <div className="grid gap-5 sm:grid-cols-2">
-            {objectifs.map((o, i) => (
-              <div key={o.title} className="card card-hover p-8">
-                <span className="font-display flex h-11 w-11 items-center justify-center rounded-full bg-emerald text-sm font-bold text-gold ring-1 ring-gold/40">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <h3 className="font-display mt-5 text-xl font-bold text-ink">{o.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
-                  {o.text}
-                </p>
-              </div>
-            ))}
+        <Section eyebrow="Le promoteur" title="Porté par un groupe de médias engagé pour l'Afrique">
+          <div className="card border-l-4 border-l-gold p-10">
+            <p className="text-lg leading-relaxed text-ink/80">
+              <strong>Choose Africa Events</strong> est promu par le groupe{" "}
+              <strong>Mbouma Kohomm Holding &amp; Filiales</strong>, éditeur de
+              médias et organisateur d'événements dédiés au continent africain —
+              notamment Eco-Business Journal, Panafrica Hebdo, African Elites
+              Book, So Africa Magazine et de nombreux autres titres et services
+              tournés vers l'économie africaine.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-muted">
+              Fort de cet écosystème éditorial et événementiel, le groupe met son
+              expertise au service de la promotion des investissements étrangers
+              en Afrique à travers les quatre supports de Choose Africa Events.
+            </p>
           </div>
         </Section>
       </section>
+
+      {/* But & objectifs */}
+      <Section eyebrow="But & objectifs" title="Comprendre pour investir, agir pour transformer">
+        <div className="grid gap-5 sm:grid-cols-2">
+          {objectifs.map((o, i) => (
+            <div key={o.title} className="card card-hover p-8">
+              <span className="font-display flex h-11 w-11 items-center justify-center rounded-full bg-emerald text-sm font-bold text-gold ring-1 ring-gold/40">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <h3 className="font-display mt-5 text-xl font-bold text-ink">{o.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                {o.text}
+              </p>
+            </div>
+          ))}
+        </div>
+      </Section>
 
       {/* Haut-parrainage */}
       <Section eyebrow="Haut-parrainage" title="Un engagement au plus haut niveau">
