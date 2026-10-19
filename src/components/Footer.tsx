@@ -90,11 +90,19 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-emerald-light/40">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-sand/50 sm:flex-row sm:px-6">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-xs text-sand/50 sm:flex-row sm:px-6">
           <p>
             © {new Date().getFullYear()} {site.name} — Tous droits réservés.
           </p>
-          <p className="tracking-wide">{site.url}</p>
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1">
+            <Link
+              href="/cgv"
+              className="tracking-wide transition hover:text-gold-light"
+            >
+              Conditions Générales de Vente
+            </Link>
+            <span className="tracking-wide">{site.url}</span>
+          </div>
         </div>
       </div>
     </footer>
