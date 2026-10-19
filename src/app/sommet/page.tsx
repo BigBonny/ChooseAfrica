@@ -102,19 +102,20 @@ export default function SommetPage() {
       </section>
 
       {/* Le lieu */}
-      <Section eyebrow="Le lieu" title="Un cadre prestigieux au cœur de Paris">
+      <Section eyebrow="Le lieu" title="Un cadre à la hauteur de l'événement">
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div>
             <p className="text-lg font-light leading-relaxed text-ink/80">
-              Le Sommet Choose Africa se tient dans un lieu emblématique de la
-              capitale, facilement accessible aux délégations internationales et
+              Le Sommet Choose Africa Events se tiendra dans un Palais des
+              Congrès, facilement accessible aux délégations internationales et
               offrant des espaces adaptés aux plénières, aux ateliers et aux
-              rendez-vous d&apos;affaires.
+              rendez-vous d&apos;affaires. La ville hôte sera annoncée
+              prochainement.
             </p>
             <ul className="mt-8 space-y-4">
               {[
-                { icon: "📍", text: "Palais des Congrès — Paris, France" },
-                { icon: "🚆", text: "Accès direct en transports en commun" },
+                { icon: "📍", text: "Palais des Congrès — ville à confirmer" },
+                { icon: "🚆", text: "Accès facilité pour les délégations internationales" },
                 { icon: "🤝", text: "Espace B2B dédié aux rendez-vous d'affaires" },
                 { icon: "🍽️", text: "Déjeuner d'affaires & cocktail de clôture inclus" },
               ].map((f) => (
@@ -130,8 +131,8 @@ export default function SommetPage() {
           <div className="relative overflow-hidden rounded-3xl shadow-xl">
             <div className="relative aspect-[4/3]">
               <Image
-                src="/images/paris.jpg"
-                alt="Paris"
+                src="/images/audience.jpg"
+                alt="Palais des Congrès"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
@@ -142,7 +143,7 @@ export default function SommetPage() {
                   Le lieu
                 </p>
                 <p className="font-display mt-1 text-3xl font-bold italic text-background">
-                  Paris
+                  Palais des Congrès
                 </p>
               </div>
             </div>

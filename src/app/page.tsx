@@ -99,8 +99,8 @@ export default function Home() {
                 <div className="deco-ring absolute inset-0" />
                 <div className="deco-ring absolute inset-4" />
                 <Image
-                  src="/images/carte-afrique.jpg"
-                  alt="Carte des pays d'Afrique"
+                  src="/images/globe-afrique.png"
+                  alt="Globe centré sur le continent africain"
                   fill
                   priority
                   sizes="(max-width: 1024px) 0vw, 40vw"

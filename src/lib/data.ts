@@ -6,9 +6,9 @@ export const site = {
     "Le rendez-vous international des décideurs, investisseurs et entrepreneurs engagés dans le développement économique de l'Afrique.",
   email: "contact@choose-africa.com",
   phone: "+33 1 00 00 00 00",
-  address: "Paris · Brazzaville · Libreville",
-  sommetDate: "2026-11-19T09:00:00+01:00",
-  sommetLabel: "19 novembre 2026 — Palais des Congrès, Paris",
+  address: "Paris · Yaoundé · Accra",
+  sommetDate: "2028-11-19T09:00:00+01:00",
+  sommetLabel: "19 novembre 2028 — Palais des Congrès",
 };
 
 export const nav = [
@@ -247,7 +247,7 @@ export const articles = [
     excerpt:
       "Les États membres harmonisent leurs réglementations pour faciliter la circulation des capitaux et des biens dans la sous-région.",
     category: "Analyses",
-    date: "12 sept. 2026",
+    date: "12 sept. 2028",
     readTime: "6 min",
   },
   {
@@ -256,7 +256,7 @@ export const articles = [
     excerpt:
       "Une nouvelle politique de transformation locale redessine la chaîne de valeur du coton et crée des milliers d'emplois.",
     category: "Initiatives & entreprises",
-    date: "08 sept. 2026",
+    date: "08 sept. 2028",
     readTime: "5 min",
   },
   {
@@ -265,7 +265,7 @@ export const articles = [
     excerpt:
       "Capacité, connexions ferroviaires et zones franches : le port camerounais s'impose comme une porte d'entrée régionale.",
     category: "Opportunités & projets",
-    date: "01 sept. 2026",
+    date: "01 sept. 2028",
     readTime: "7 min",
   },
   {
@@ -274,7 +274,7 @@ export const articles = [
     excerpt:
       "Plusieurs projets d'envergure visent à électrifier les territoires tout en réduisant la dépendance aux énergies fossiles.",
     category: "Matières premières",
-    date: "26 août 2026",
+    date: "26 août 2028",
     readTime: "4 min",
   },
   {
@@ -283,7 +283,7 @@ export const articles = [
     excerpt:
       "Paiements mobiles, crédit aux PME, assurance : le secteur fintech attire un volume record d'investissements.",
     category: "Capitaux & finances",
-    date: "20 août 2026",
+    date: "20 août 2028",
     readTime: "8 min",
   },
   {
@@ -292,7 +292,7 @@ export const articles = [
     excerpt:
       "Panorama des outils de garanties et d'assurances proposés aux investisseurs par les institutions financières.",
     category: "Points de vue",
-    date: "15 août 2026",
+    date: "15 août 2028",
     readTime: "6 min",
   },
 ];
@@ -333,7 +333,7 @@ export const partners = [
 
 export const videos = [
   {
-    title: "Choose Africa 2026 — Teaser officiel",
+    title: "Choose Africa Events 2028 — Teaser officiel",
     image: "/images/conference.jpg",
     duration: "2:14",
     description: "Découvrez l'ambition et les temps forts du Sommet Choose Africa.",
