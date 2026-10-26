@@ -66,13 +66,16 @@ export default function ContactPage() {
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald text-lg text-gold ring-1 ring-gold/40">
                   📍
                 </span>
-                <div>
+                <div className="space-y-3">
                   <p className="text-xs uppercase tracking-widest text-muted">
                     Bureaux
                   </p>
-                  <p className="text-sm font-semibold text-ink">
-                    {site.address}
-                  </p>
+                  {site.offices.map((o) => (
+                    <p key={o.label} className="text-sm font-semibold text-ink">
+                      <span className="text-muted font-medium">{o.label} : </span>
+                      {o.line1}, {o.line2}
+                    </p>
+                  ))}
                 </div>
               </li>
             </ul>

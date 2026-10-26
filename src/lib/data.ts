@@ -5,8 +5,12 @@ export const site = {
   description:
     "Le rendez-vous international des décideurs, investisseurs et entrepreneurs engagés dans le développement économique de l'Afrique.",
   email: "contact@choose-africa.com",
-  phone: "+33 1 00 00 00 00",
+  phone: "+ 33 (0)1 89 86 03 18",
   address: "Paris · Yaoundé · Accra",
+  offices: [
+    { label: "France", line1: "29 rue Tronchet", line2: "75008 Paris" },
+    { label: "Cameroun", line1: "B.P. 13241", line2: "Yaoundé" },
+  ],
   sommetDate: "2028-11-19T09:00:00+01:00",
   sommetLabel: "19 novembre 2028 — Palais des Congrès",
 };

@@ -12,7 +12,7 @@ export default function MagazinePage() {
         image="/images/mara.jpg"
         eyebrow="Rubrique 2 — Le Magazine"
         title="Le Magazine"
-        description="Articles, portraits et analyses pour décoder les économies africaines et suivre l'actualité de l'investissement sur le continent."
+        description="Celles et ceux qui construisent l'Afrique, qui entreprennent."
       />
 
       {/* Sommaire / Rubriques */}
@@ -88,7 +88,7 @@ export default function MagazinePage() {
       </section>
 
       {/* Portraits */}
-      <Section eyebrow="Portraits" title="Celles et ceux qui font l'Afrique qui entreprend">
+      <Section eyebrow="Portraits" title="Des hommes et des femmes d'influence">
         <div className="grid gap-7 md:grid-cols-3">
           {portraits.map((p) => (
             <figure key={p.name} className="card card-hover flex flex-col p-8">
