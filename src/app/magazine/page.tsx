@@ -13,6 +13,7 @@ export default function MagazinePage() {
         eyebrow="Rubrique 2 — Le Magazine"
         title="Le Magazine"
         description="Celles et ceux qui construisent l'Afrique, qui entreprennent."
+        descriptionClassName="font-display text-2xl italic leading-relaxed text-sand sm:text-3xl"
       />
 
       {/* Sommaire / Rubriques */}

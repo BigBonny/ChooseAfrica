@@ -7,12 +7,14 @@ export default function PageHero({
   eyebrow,
   title,
   description,
+  descriptionClassName,
   crumbs,
   image,
 }: {
   eyebrow?: string;
   title: string;
   description?: string;
+  descriptionClassName?: string;
   crumbs?: Crumb[];
   image?: string;
 }) {
@@ -68,7 +70,12 @@ export default function PageHero({
         </h1>
         <div className="gold-rule animate-fade-up delay-200 mt-6" />
         {description && (
-          <p className="animate-fade-up delay-300 mt-6 max-w-2xl text-lg font-light leading-relaxed text-sand/85">
+          <p
+            className={`animate-fade-up delay-300 mt-6 max-w-2xl ${
+              descriptionClassName ??
+              "text-lg font-light leading-relaxed text-sand/85"
+            }`}
+          >
             {description}
           </p>
         )}
