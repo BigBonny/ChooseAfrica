@@ -85,7 +85,7 @@ export default function ContactPage() {
               <p className="mt-2 text-sm text-muted">
                 Pour toute demande presse, contactez-nous à{" "}
                 <span className="font-semibold text-emerald">
-                  presse@choose-africa.com
+                  presse@choose-africa-events.com
                 </span>
                 .
               </p>

@@ -1,10 +1,10 @@
 export const site = {
   name: "Choose Africa Events",
   tagline: "Dossiers-Pays & Sommets Annuels",
-  url: "www.choose-africa.com",
+  url: "www.choose-africa-events.com",
   description:
     "Le rendez-vous international des décideurs, investisseurs et entrepreneurs engagés dans le développement économique de l'Afrique.",
-  email: "contact@choose-africa.com",
+  email: "contact@choose-africa-events.com",
   phone: "+ 33 (0)1 89 86 03 18",
   address: "Paris · Yaoundé · Accra",
   offices: [
